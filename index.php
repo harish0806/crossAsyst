@@ -9,28 +9,29 @@ if($method == 'POST'){
 
 	$text = $json->result->parameters->text;
 	echo $text;
-        $speech=array("Hi, Nice to meet you","Bye, good night","Yes, you can type anything here.","Sorry, I didnt get that. Please ask me something else.");
+        //$speech=array("Hi, Nice to meet you","Bye, good night","Yes, you can type anything here.","Sorry, I didnt get that. Please ask me something else.");
 	switch ($text) {
-		case "hi":
-			$reply=$speech[0];
+		case 'hi':
+			$speech = "Hi, Nice to meet you";
 			break;
 
 		case 'bye':
-			$reply=$speech[1];
+			$speech = "Bye, good night";
 			break;
 
 		case 'anything':
-			$reply=$speech[2];
+			$speech = "Yes, you can type anything here.";
 			break;
 		
 		default:
-			$reply=$speech[3];
+			$speech = "Sorry, I didnt get that. Please ask me something else.";
 			break;
 	}
 
+
 	$response = new \stdClass();
-	$response->speech = $reply;
-	$response->displayText = $reply;
+	$response->speech = $speech;
+	$response->displayText = $speech;
 	$response->source = "webhook";
 	echo json_encode($response);
 }
