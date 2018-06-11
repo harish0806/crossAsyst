@@ -24,7 +24,7 @@ if($method == 'POST'){
 			break;
 		
 		default:
-			$reply=$speech[4];
+			$reply=$speech[3];
 			break;
 	}
 
