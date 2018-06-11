@@ -23,9 +23,9 @@ if($method == 'POST'){
 			$speech = "Yes, you can type anything here.";
 			break;
 		
-		default:
-			$speech = "Sorry, I didnt get that. Please ask me something else.";
-			break;
+		//default:
+		//	$speech = "Sorry, I didnt get that. Please ask me something else.";
+		//	break;
 	}
 
 
