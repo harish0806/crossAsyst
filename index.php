@@ -29,8 +29,8 @@ if($method == 'POST'){
 	}
 
 	$response = new \stdClass();
-	$response->speech = $speech;
-	$response->displayText = $speech;
+	$response->fulfillmentMessages = $speech;
+	$response->fulfillmentMessages = $speech;
 	$response->source = "webhook";
 	echo json_encode($response);
 }
