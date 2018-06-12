@@ -18,11 +18,11 @@ if($method == 'POST'){
 			break;
 
 		case 'Ram':
-			$speech = "Hi, Nice to meet you, an appointment with Doctor Ram has been scheduled"
+			$speech = "Hi, Nice to meet you, an appointment with Doctor Ram has been scheduled";
 			break;
 
 		case 'Jay':
-			$speech = "Hi, Nice to meet you, an appointment with Doctor Jay has been scheduled"
+			$speech = "Hi, Nice to meet you, an appointment with Doctor Jay has been scheduled";
 			break;
 		
 		default:
