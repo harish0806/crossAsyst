@@ -30,17 +30,17 @@ if($method == 'POST'){
 			break;
 	}
 
-	$response = array();
+	//$response = array();
 	$response = new \stdClass();
 	$response->fulfillmentMessages = $speech;
 	$response->displayText = $speech;
 	$response->source = "webhook";
 	header('Content-Type: application/json');
-	echo json_encode($response);
+	echo json_encode(array($response));
 }
 else
 {
-	echo "Method not allowed";
+	echo "Method not allowed adding array to encode";
 }
 
 ?>
