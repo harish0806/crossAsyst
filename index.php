@@ -13,16 +13,16 @@ if($method == 'POST'){
 	//echo $text;
         //$speech=array("Hi, Nice to meet you","Bye, good night","Yes, you can type anything here.","Sorry, I didnt get that. Please ask me something else.");
 	switch ($text) {
-		case 'hi':
-			$speech = "Hi, Nice to meet you";
+		case 'Sham':
+			$speech = "Hi, Nice to meet you, an appointment with Doctor $text has been scheduled";
 			break;
 
-		case 'bye':
-			$speech = "Bye, good night";
+		case 'Ram':
+			$speech = "Hi, Nice to meet you, an appointment with Doctor $text has been scheduled"
 			break;
 
-		case 'anything':
-			$speech = "Yes, you can type anything here.";
+		case 'Jay':
+			$speech = "Hi, Nice to meet you, an appointment with Doctor $text has been scheduled"
 			break;
 		
 		default:
@@ -40,7 +40,7 @@ if($method == 'POST'){
 }
 else
 {
-	echo "Method not allowed after reading the documentation";
+	echo "Method not allowed";
 }
 
 ?>
