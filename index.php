@@ -7,6 +7,7 @@ if($method == 'POST'){
 	$requestBody = file_get_contents('php://input');
 	$json = json_decode($requestBody);
     	$text        = array();
+	$speech	     = array();
     	$text        = $json->queryResult->parameters->text;
 	//$text = $json->queryResult->querytext;
 	//echo $text;
@@ -31,8 +32,8 @@ if($method == 'POST'){
 
 
 	$response = new \stdClass();
-	$response->fulfillmentMessages = array($speech);
-	$response->displayText = array($speech);
+	$response->fulfillmentMessages = $speech;
+	$response->displayText = $speech;
 	$response->source = "webhook";
 	echo json_encode($response);
 }
