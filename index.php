@@ -35,6 +35,7 @@ if($method == 'POST'){
 	$response->fulfillmentMessages = $speech;
 	$response->displayText = $speech;
 	$response->source = "webhook";
+	header('Content-Type: application/json');
 	echo json_encode($response);
 }
 else
