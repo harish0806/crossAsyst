@@ -40,7 +40,7 @@ if($method == 'POST'){
 }
 else
 {
-	echo "Method not allowed (Dynamic)";
+	echo "Method not allowed (Dynamic) !!";
 }
 
 ?>
