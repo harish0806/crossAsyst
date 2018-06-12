@@ -14,19 +14,19 @@ if($method == 'POST'){
         //$speech=array("Hi, Nice to meet you","Bye, good night","Yes, you can type anything here.","Sorry, I didnt get that. Please ask me something else.");
 	switch ($text) {
 		case 'Sham':
-			$speech = "Hi, Nice to meet you, an appointment with Doctor Sham has been scheduled";
+			$speech = "Hi, Nice to meet you, an appointment with Doctor $text has been scheduled";
 			break;
 
 		case 'Ram':
-			$speech = "Hi, Nice to meet you, an appointment with Doctor Ram has been scheduled";
+			$speech = "Hi, Nice to meet you, an appointment with Doctor $text has been scheduled";
 			break;
 
 		case 'Jay':
-			$speech = "Hi, Nice to meet you, an appointment with Doctor Jay has been scheduled";
+			$speech = "Hi, Nice to meet you, an appointment with Doctor $text has been scheduled";
 			break;
 		
 		default:
-			$speech = "Sorry, I didnt get that. Please ask me something else.";
+			$speech = "Sorry, I didnt get that. No such doctor exists.";
 			break;
 	}
 
