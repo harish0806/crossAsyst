@@ -9,7 +9,7 @@ if($method == 'POST'){
     	$text        = array();
     	$text        = $json->queryResult->parameters->text;
 	//$text = $json->queryResult->querytext;
-	echo $text;
+	//echo $text;
         //$speech=array("Hi, Nice to meet you","Bye, good night","Yes, you can type anything here.","Sorry, I didnt get that. Please ask me something else.");
 	switch ($text) {
 		case 'hi':
