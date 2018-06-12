@@ -30,7 +30,7 @@ if($method == 'POST'){
 			break;
 	}
 
-
+	$response = array();
 	$response = new \stdClass();
 	$response->fulfillmentMessages = $speech;
 	$response->displayText = $speech;
